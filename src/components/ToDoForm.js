@@ -23,7 +23,7 @@ const ToDoForm = ({ toDos, setToDos}) => {
         e.preventDefault()
 
         // create objects
-        setToDos([...toDos,{ subject: subject, description: description, isDone: true, id: uuid()}])
+        setToDos([...toDos,{ subject: subject, description: description, isDone: false, id: uuid()}])
 
         // clear inputs
         setSubject('')
